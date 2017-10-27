@@ -70,7 +70,7 @@ to{margin-left: 0;}
 .answer{position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.68);padding-top: 40%;}
 .answer-content{width: 87%; margin: 0 auto; background-color: #e3dee4; height: 36vh; padding: 10% 6.7%; position: relative;}
 .next-btn,.complete-btn{position: absolute; width: 24.6vw; height: 6.25vw; background: url("../img/next-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; left: 50%; margin-left: -12.3vw; bottom: 6.7%;}
-.pagination{display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; position: absolute; bottom: 5%; width: 100%; left: 0;}
+.pagination{display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; position: absolute; bottom: 3%; width: 100%; left: 0;}
 .pagination span{width: 0.3rem; height: 0.3rem; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; border: 1px solid #7f7d7e; margin: 0 0.13rem;}
 #page2 .pagination span:nth-of-type(1){background-color: #7f7d7e;}
 #page3 .pagination span:nth-of-type(2){background-color: #7f7d7e;}
