@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道,双年展问卷"/>
+    <meta name="description" content="安仁乐道"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>安仁双年展</title>
+</head>
+<body>
+<audio src="audio/bgm.mp3" loop preload="auto" id="bgm"></audio>
+<div class="page" id="page0">
+    <img src="img/loading.gif" alt=""/>
+    <div class="progress">0%</div>
+</div>
+<div class="page hide" id="page1">
+    <div class="page1-bg"></div>
+    <img src="img/page1-word1.png" alt="" class="page1-word1"/>
+    <img src="img/page1-word2.png" alt="" class="page1-word2"/>
+    <a href="javascript:;" class="page1-btn"></a>
+</div>
+<div class="page hide" id="page2">
+    <img src="img/1.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page2-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page2-a1.png" alt=""/>
+            <input type="radio" name="que1" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page2-a2.png" alt=""/>
+            <input type="radio" name="que1" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page2-a3.png" alt=""/>
+            <input type="radio" name="que1" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page2-a4.png" alt=""/>
+            <input type="radio" name="que1" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page2-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page3">
+    <img src="img/2.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page3-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page3-a1.png" alt=""/>
+            <input type="radio" name="que2" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page3-a2.png" alt=""/>
+            <input type="radio" name="que2" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page3-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page4">
+    <img src="img/3.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page4-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page4-a1.png" alt=""/>
+            <input type="radio" name="que3" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page4-a2.png" alt=""/>
+            <input type="radio" name="que3" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page4-a3.png" alt=""/>
+            <input type="radio" name="que3" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page4-a4.png" alt=""/>
+            <input type="radio" name="que3" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page4-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page5">
+    <img src="img/4.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page5-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page5-a1.png" alt=""/>
+            <input type="radio" name="que4" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page5-a2.png" alt=""/>
+            <input type="radio" name="que4" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page5-a3.png" alt=""/>
+            <input type="radio" name="que4" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page5-a4.png" alt=""/>
+            <input type="radio" name="que4" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page5-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page6">
+    <img src="img/5.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page6-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page6-a1.png" alt=""/>
+            <input type="radio" name="que5" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page6-a2.png" alt=""/>
+            <input type="radio" name="que5" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page6-a3.png" alt=""/>
+            <input type="radio" name="que5" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page6-a4.png" alt=""/>
+            <input type="radio" name="que5" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page6-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page7">
+    <img src="img/1.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page7-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page7-a1.png" alt=""/>
+            <input type="radio" name="que6" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page7-a2.png" alt=""/>
+            <input type="radio" name="que6" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page7-a3.png" alt=""/>
+            <input type="radio" name="que6" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page7-a4.png" alt=""/>
+            <input type="radio" name="que6" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page7-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page8">
+    <img src="img/2.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page8-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page8-a1.png" alt=""/>
+            <input type="radio" name="que7" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page8-a2.png" alt=""/>
+            <input type="radio" name="que7" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page8-a3.png" alt=""/>
+            <input type="radio" name="que7" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page8-a4.png" alt=""/>
+            <input type="radio" name="que7" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page8-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page9">
+    <img src="img/3.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page9-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page9-a1.png" alt=""/>
+            <input type="radio" name="que8" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page9-a2.png" alt=""/>
+            <input type="radio" name="que8" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page9-a3.png" alt=""/>
+            <input type="radio" name="que8" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page9-a4.png" alt=""/>
+            <input type="radio" name="que8" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page9-answer.png" alt=""/>
+            <a href="javascript:;" class="next-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page10">
+    <img src="img/4.gif" alt="" class="page-pic"/>
+    <div class="questions">
+        <img src="img/page10-title.png" alt="" class="page-title"/>
+        <div class="answer-item clearfix">
+            <img src="img/page10-a1.png" alt=""/>
+            <input type="radio" name="que9" value="1"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page10-a2.png" alt=""/>
+            <input type="radio" name="que9" value="2"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page10-a3.png" alt=""/>
+            <input type="radio" name="que9" value="3"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+        <div class="answer-item clearfix">
+            <img src="img/page10-a4.png" alt=""/>
+            <input type="radio" name="que9" value="4"/>
+            <span class="page-circle pull-right"></span>
+        </div>
+    </div>
+    <div class="answer hide">
+        <div class="answer-content">
+            <img src="img/page10-answer.png" alt=""/>
+            <a href="javascript:;" class="complete-btn"></a>
+        </div>
+    </div>
+    <div class="pagination">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="page hide" id="page11"></div>
+<div class="music"></div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+        <i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    ;(function ($){
+        var click = "ontouchstart" in document ? "touchend" : "click";
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener("WeixinJSBridgeReady", function () {
+        }, false);
+        var bgm = document.getElementById("bgm");
+        var imgs = [
+            "1.gif",
+            "2.gif",
+            "3.gif",
+            "4.gif",
+            "5.gif",
+            "complete-btn.png",
+            "next-btn.png",
+            "page1-bg.png",
+            "page1-btn.png",
+            "page1-word1.png",
+            "page1-word2.png",
+            "page2-a1.png",
+            "page2-a2.png",
+            "page2-a3.png",
+            "page2-a4.png",
+            "page2-answer.png",
+            "page2-title.png",
+            "page3-a1.png",
+            "page3-a2.png",
+            "page3-answer.png",
+            "page3-title.png",
+            "page4-a1.png",
+            "page4-a2.png",
+            "page4-a3.png",
+            "page4-a4.png",
+            "page4-answer.png",
+            "page4-title.png",
+            "page5-a1.png",
+            "page5-a2.png",
+            "page5-a3.png",
+            "page5-a4.png",
+            "page5-answer.png",
+            "page5-title.png",
+            "page6-a1.png",
+            "page6-a2.png",
+            "page6-a3.png",
+            "page6-a4.png",
+            "page6-answer.png",
+            "page6-title.png",
+            "page7-a1.png",
+            "page7-a2.png",
+            "page7-a3.png",
+            "page7-a4.png",
+            "page7-answer.png",
+            "page7-title.png",
+            "page8-a1.png",
+            "page8-a2.png",
+            "page8-a3.png",
+            "page8-a4.png",
+            "page8-answer.png",
+            "page8-title.png",
+            "page9-a1.png",
+            "page9-a2.png",
+            "page9-a3.png",
+            "page9-a4.png",
+            "page9-answer.png",
+            "page9-title.png",
+            "page10-a1.png",
+            "page10-a2.png",
+            "page10-a3.png",
+            "page10-a4.png",
+            "page10-answer.png",
+            "page10-title.png",
+            "re-submit.png",
+            "result1.png",
+            "result1-bg.png",
+            "result2.png",
+            "result3-bg.png",
+            "sub-succ.png",
+            "submit-btn.png",
+            "music-icon.png",
+            "music-pause.png"
+        ];
+        preload(imgs,$(".progress"));
+        function preload(imgs,proBox){
+            var proNum = 0,
+                    count = imgs.length,
+                    proPercentage = 0;
+            for(var i in imgs){
+                var newImg = new Image();
+                newImg.src = "img/"+imgs[i];
+                newImg.onload = function (){
+                    proNum++;
+                    proPercentage = Math.floor(proNum/count*100);
+                    $("#progress").width(proPercentage+"%");
+                    if(proNum>=count){
+                        proPercentage=100;
+                        $("#page0").stop().fadeOut(500, function (){
+                            $("#page0").addClass("hide");
+                        });
+                        $("#page1").stop().fadeIn(300);
+                        $(".music").stop().fadeIn(300);
+                        setTimeout(function(){
+                            $(".music").addClass("play");
+                            bgm.play();
+                            WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                                bgm.play();
+                            });
+                        },100);
+                    }
+                    proBox.html(proPercentage+"%");
+                }
+            }
+        }
+        $(document).on(click, ".music", function (){
+            if(bgm.paused){
+                bgm.play();
+                $(".music").addClass("play");
+            }else{
+                bgm.pause();
+                $(".music").removeClass("play");
+            }
+        });
+        /*==答案==*/
+        var correct = ["", "", 2, 2, 4, 1, 4, 3, 1, 3, 3];
+        var corrNum = 0;
+        /*==显示答案==*/
+        $(".page").each(function(index, item){
+            $(this).find("input").on("change", function (){
+//                console.log(index);
+                $("#page"+index).find(".answer").stop().fadeIn(500);
+//                console.log($(this).val())
+                if($(this).val() == correct[index]){
+                    corrNum++;
+                    console.log(corrNum);
+                }
+            });
+            if($(this).find("input").val()!=""){
+                $("#page"+index).find(".next-btn").on(click, function (){
+                    nextPage(index, index+1);
+                })
+            }
+        });
+        $(".page1-btn").on(click, function (){
+            nextPage(1, 2);
+        });
+        /*==提交==*/
+        var resultDiv;
+        $(".complete-btn").on(click, function (){
+            if(corrNum<=5){
+                resultDiv = $('<div class="result result1"><img src="img/result1.png" alt=""/></div>');
+            }else if(corrNum<9){
+                resultDiv = $('<div class="result result2"><img src="img/result2.png" alt=""/></div>');
+            }else if(corrNum==9){
+                resultDiv = $('<div class="result result3"><div class="submit-form"><input type="text" class="input-controls" placeholder="请输入您的姓名"/><input type="tel" class="input-controls" placeholder="请输入您的电话"/><a href="javascript:;" class="submit-btn"></a></div></div>')
+            }
+            setTimeout(function (){
+                $("#page11").empty().append(resultDiv);
+                nextPage(10, 11);
+            },0)
+        });
+        /*==下一页==*/
+        function nextPage(thisPage, nextPage) {
+            if(thisPage<11){
+//                $("#page"+thisPage).stop().fadeOut(500, function (){
+//                    $("#page"+thisPage).addClass("hide");
+//                });
+                $("#page"+thisPage).stop().animate({
+                    left :　"-100%"
+                },300,"linear", function (){
+                    $("#page"+thisPage).addClass("hide");
+                });
+                $("#page"+nextPage).stop().delay(0).fadeIn(100, function () {
+                    $("#page"+nextPage).removeClass("hide");
+                });
+            }
+        }
+        /*==电话号码的提交==*/
+        $("#page11").on(click,".submit-btn", function(){
+//            $.ajax({
+//                method  : "get",
+//                url     : "XXX",
+//                data    : {},
+//                success : function (){
+//                    $(".submit-btn").addClass("succ").off(click);
+//                },
+//                error   : function (){
+//                    $(".submit-btn").addClass("reSub");
+//                }
+//            });
+             $(".submit-btn").addClass("succ").off(click);
+
+        });
+
+    })(jQuery);
+</script>
+</body>
+</html>
